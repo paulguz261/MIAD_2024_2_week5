@@ -29,7 +29,8 @@ jobs:
           name: Deploy to Railway App
           command: |
             cd bankchurn-api 
-            railway up --service = "strong-acceptance" -d
+            railway link -p "7b5fdb18-8bea-4eac-b690-0ed50dbd89af" -s "c9339239-2da8-45a3-b446-32729f49d5f1"
+            railway up --detach
 
 
 tags_only: &tags_only
